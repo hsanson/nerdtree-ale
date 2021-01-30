@@ -1,0 +1,29 @@
+= NERDTree ALE Plugin
+
+This is a NERDTree plugin that highlights all visible nodes that have issues reported by https://github.com/dense-analysis/ale[ALE] (Asynchronous Lint Engine).
+
+== Installation
+
+Using [Plug](https://github.com/junegunn/vim-plug) plugin manager:
+
+[source,sh]
+---
+Plug 'dense-analysis/ale'
+Plug 'hsanson/nerdtree-ale'
+---
+
+== Usage
+
+When NERDTree is open and there are issues reported on any of the open buffers this plugin will show a flag next to the files and directories where the buffers with issues are located.
+
+== Limitations
+
+This plugin is limited by the reporting capabilities of ALE. If the enabled linters in ALE report issues for open buffers then errors will show when buffers with issues are open. If the enabled linters report issues for all files in the project then this plugin will also show the error flag next to all files with reported issues.
+
+This plugin was implemented as proof of concept and has not been tested together with other NERDTree plugins. Is possible there will be conflicts with such plugins.
+
+== Configuration
+
+Is possible to select the character used for marking files and directories with issues by setting *g:nerdtree_ale_glyph* variable.
+
+
