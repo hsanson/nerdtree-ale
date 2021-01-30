@@ -4,13 +4,13 @@ This is a NERDTree plugin that highlights all visible nodes that have issues rep
 
 == Installation
 
-Using [Plug](https://github.com/junegunn/vim-plug) plugin manager:
+Using https://github.com/junegunn/vim-plug[Plug] plugin manager:
 
 [source,sh]
----
+--
 Plug 'dense-analysis/ale'
 Plug 'hsanson/nerdtree-ale'
----
+--
 
 == Usage
 
